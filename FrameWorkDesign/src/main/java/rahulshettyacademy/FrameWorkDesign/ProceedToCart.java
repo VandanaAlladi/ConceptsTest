@@ -1,0 +1,44 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import rahulshettyacademy.utilities.AbstractComponents;
+
+public class ProceedToCart extends AbstractComponents {
+	WebDriver driver;
+	
+	public ProceedToCart(WebDriver driver) {
+		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@FindBy(id="nav-cart-count")
+	WebElement cart;
+	@FindBy(xpath="//input[@value='Proceed to checkout']")
+	WebElement proceedToCheckOut;
+	
+	
+	//driver.findElement(By.id("nav-cart-count")).click();
+	//driver.findElement(By.xpath("//input[@value='Proceed to checkout']")).click();
+	public AddressPage proceedToBuy() {
+		cart.click();
+		proceedToCheckOut.click();
+		AddressPage addressPage=new AddressPage(driver);
+		return addressPage;
+	}
+	
+	
+	//WebElement address=driver.findElement(By.id("orderSummaryPrimaryActionBtn"));
+	//wait.until(ExpectedConditions.elementToBeClickable(address)).click();
+	
+
+}

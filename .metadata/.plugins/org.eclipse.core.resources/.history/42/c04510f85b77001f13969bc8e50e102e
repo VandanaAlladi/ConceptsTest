@@ -1,0 +1,16 @@
+
+public class ReverseSentence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String sentence="hello baby, how are you";
+		char[] arr=sentence.toCharArray();
+		
+		for(int i=0;i<=arr.length;i++) {
+			System.out.println(arr[i]);
+		}
+ 
+	}
+
+}

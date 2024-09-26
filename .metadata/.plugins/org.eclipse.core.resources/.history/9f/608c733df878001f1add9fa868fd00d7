@@ -1,0 +1,10 @@
+
+public class ChildClass extends ParentClass{
+	
+	public void getParentClassMethod() {
+		
+		getParentClassMethod();
+		
+	}
+
+}

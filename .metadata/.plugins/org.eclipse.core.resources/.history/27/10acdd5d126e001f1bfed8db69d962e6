@@ -1,0 +1,37 @@
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+public class Wikipedia {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.wikipedia.org/");
+		driver.findElement(By.id("searchInput")).click(); 
+		driver.findElement(By.id("searchInput")).sendKeys("Singapore");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='suggestions-dropdown']/descendant::a[@class='suggestion-link'][1]")).click();
+		Thread.sleep(2000);
+		
+		//System.out.println("***************************************English**********************");
+		//System.out.println(driver.findElement(By.id("mw-content-text")).getText());
+		
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement languageLink=
+		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("p-lang-btn-label"))));
+		languageLink.click();
+		
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='grid uls-menu notheme skin-invert uls-wide']/descendant::a[@lang='te'][1]")).click();
+
+	}
+
+}

@@ -1,0 +1,26 @@
+
+public class StringAddition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String S="A2B3C1";
+		int n=0;
+		char[] arr=S.toCharArray();
+		
+		for(int i=0;i<arr.length;i++) {
+		
+			if(Character.isDigit(arr[i])) {
+			n=n+arr[i];
+			System.out.println(n);
+			
+		}
+		
+		
+	}
+		
+		System.out.println(n);
+
+}
+}

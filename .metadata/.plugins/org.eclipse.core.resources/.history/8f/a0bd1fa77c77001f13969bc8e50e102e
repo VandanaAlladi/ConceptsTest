@@ -1,0 +1,26 @@
+
+public class Palindrome1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String a="malayalam";
+		
+		int left=0;
+		int right=a.length()-1;
+		
+		while(left<right) {
+		if(a.charAt(left) != a.charAt(right)) {
+			System.out.println("not a palindrome");
+			
+		}
+		left++;
+		right--;
+		
+		
+	}
+		System.out.println("palindrome");
+
+}
+}

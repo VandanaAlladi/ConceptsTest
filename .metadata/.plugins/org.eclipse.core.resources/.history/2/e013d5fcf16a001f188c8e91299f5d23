@@ -1,0 +1,66 @@
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class TickCheckbox {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        WebDriver driver = new ChromeDriver();
+
+        driver.manage().window().maximize();
+
+        driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+        // Add items to cart and proceed to checkout (similar to your previous code)
+        driver.findElement(By.xpath("//h4[text()='Tomato - 1 Kg']/parent::div/descendant::button[text()='ADD TO CART']")).click();
+        driver.findElement(By.xpath("//h4[text()='Potato - 1 Kg']/parent::div/descendant::button[text()='ADD TO CART']")).click();
+        Thread.sleep(1000);
+        for(int i=1;i<5;i++) {
+            driver.findElement(By.xpath("//h4[text()='Potato - 1 Kg']/parent::div/descendant::a[2]")).click();
+            Thread.sleep(1000);
+        }
+
+        driver.findElement(By.xpath("//h4[text()='Onion - 1 Kg']/parent::div/descendant::button[text()='ADD TO CART']")).click();
+        for(int j=1;j<10;j++) {
+            driver.findElement(By.xpath("//h4[text()='Onion - 1 Kg']/parent::div/descendant::a[2]")).click();
+            Thread.sleep(1000);
+        }
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[@class='cart-icon']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+        Thread.sleep(1000);
+        System.out.println(driver.getCurrentUrl());
+
+        driver.findElement(By.className("promoCode")).sendKeys("rahulshettyacademy");
+
+        driver.findElement(By.xpath("//button[text()='Apply']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//button[text()='Place Order']")).click();
+        Thread.sleep(3000);
+
+        WebElement dropdownElement = driver.findElement(By.xpath("//select[@style='width: 200px;']"));
+        Thread.sleep(1000);
+        Select dropdown = new Select(dropdownElement);
+        dropdown.selectByVisibleText("India");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[text()='Terms & Conditions']")).click();
+        Thread.sleep(3000);
+
+        // Locate the checkbox and click on it
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='checkbox' and @name='agree']")));
+        checkbox.click();
+
+        // Proceed with the rest of your code (e.g., clicking the "Home" link)
+        WebElement homeLink = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Home")));
+        homeLink.click();
+    }
+}

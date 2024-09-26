@@ -1,0 +1,143 @@
+2024-08-28 12:08:22,486 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-28 12:12:44,592 [Worker-3: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: rahulshettyacademy:SeleniumIntroduction:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\Introduction\pom.xml.
+2024-08-28 12:12:45,589 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:45,590 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:12:45,596 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:45,597 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:12:45,795 [Worker-33: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: SelIntro:SelIntro:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\SelIntro\pom.xml.
+2024-08-28 12:12:46,283 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,284 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:12:46,286 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,287 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:12:46,359 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: SelIntr:SelIntr:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\pom.xml.
+2024-08-28 12:12:46,828 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,829 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\main\resources
+2024-08-28 12:12:46,831 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,832 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\test\resources
+2024-08-28 12:12:46,938 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,939 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:12:46,941 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:12:46,941 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:13:56,662 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:13:56,664 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\main\resources
+2024-08-28 12:13:56,667 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:13:56,668 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\test\resources
+2024-08-28 12:13:56,728 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:13:56,730 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:13:56,733 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:13:56,734 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:14:14,384 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:14:14,385 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:14:14,386 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:14:14,387 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:15:38,323 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:15:38,324 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\main\resources
+2024-08-28 12:15:38,325 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:15:38,326 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\test\resources
+2024-08-28 12:15:38,346 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:15:38,347 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:15:38,348 [Worker-40: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:15:38,349 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:15:48,020 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.9; built: 2024-05-03T13:03:17.262Z; git: efe8023327e67287f9bfd006700e6a71d45b5dd6; jvm 21.0.3+9-LTS
+2024-08-28 12:15:48,142 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@5a39ab62{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@1d92a78e{STARTED}}
+2024-08-28 12:15:48,143 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2024-08-28 12:15:48,177 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@16afaeb8{HTTP/1.1, (http/1.1)}{127.0.0.1:57601}
+2024-08-28 12:15:48,182 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@4387e01f{STARTING}[12.0.9,sto=0] @460046ms
+2024-08-28 12:16:37,336 [Worker-31: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: rahulshettyacademy:SeleniumIntroduction:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\Introduction\pom.xml.
+2024-08-28 12:16:37,477 [Worker-31: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier  to /SelIntro/target/classes
+2024-08-28 12:16:37,564 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:37,565 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:16:37,566 [Worker-31: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:37,567 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:16:38,740 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:38,741 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:16:38,742 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:38,742 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:16:45,283 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: rahulshettyacademy:SeleniumIntroduction:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\Introduction\pom.xml.
+2024-08-28 12:16:45,391 [Worker-33: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier  to /SelIntro/target/classes
+2024-08-28 12:16:45,473 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:45,474 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:16:45,476 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:16:45,476 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:18:49,992 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:18:49,993 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:18:49,995 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:18:49,995 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:18:53,851 [Worker-3: Launching AutoIntro] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier null to /SelIntro/target/classes
+2024-08-28 12:18:53,915 [Worker-3: Launching AutoIntro] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier null to /SelIntro/target/classes
+2024-08-28 12:18:53,997 [Worker-3: Launching AutoIntro] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier null to /SelIntro/target/classes
+2024-08-28 12:21:36,000 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:21:36,001 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:21:36,003 [Worker-38: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:21:36,003 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:23:13,906 [Worker-39: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:23:13,907 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:23:13,909 [Worker-39: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:23:13,909 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:25:09,631 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:25:09,632 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:25:09,633 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:25:09,634 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:30:30,132 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: SelIntro:SelIntro:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\SelIntro\pom.xml.
+2024-08-28 12:30:30,376 [Worker-33: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2.pom
+2024-08-28 12:30:30,397 [Worker-33: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2.pom
+2024-08-28 12:30:30,460 [Worker-33: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2.jar
+2024-08-28 12:30:30,498 [Worker-33: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2.jar
+2024-08-28 12:30:30,533 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: rahulshettyacademy:SeleniumIntroduction:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\Introduction\pom.xml.
+2024-08-28 12:30:30,557 [Worker-33: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier  to /SelIntro/target/classes
+2024-08-28 12:30:30,702 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:30,703 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:30:30,705 [Worker-33: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:30,706 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:30:31,811 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:31,812 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:30:31,813 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:31,814 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:30:31,840 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2-sources.jar
+2024-08-28 12:30:31,860 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:31,861 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:30:31,863 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:30:31,864 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:30:31,869 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/dev/failsafe/failsafe/3.0.2/failsafe-3.0.2-sources.jar
+2024-08-28 12:30:31,872 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for dev.failsafe:failsafe:3.0.2
+2024-08-28 12:30:31,879 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for dev.failsafe:failsafe:3.0.2
+2024-08-28 12:31:24,503 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-08-28 12:31:24,564 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: SelIntro:SelIntro:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\SelIntro\pom.xml.
+2024-08-28 12:31:24,661 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: SelIntr:SelIntr:0.0.1-SNAPSHOT @ C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\pom.xml.
+2024-08-28 12:31:24,851 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SelIntro/src
+2024-08-28 12:31:24,852 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SelIntro/src/main/resources overlaps with sources folder /SelIntro/src
+2024-08-28 12:31:24,852 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /SelIntro/src/test/java because it overlaps with /SelIntro/src
+2024-08-28 12:31:24,852 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SelIntro/src/test/resources overlaps with sources folder /SelIntro/src
+2024-08-28 12:31:24,953 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SelIntr/src
+2024-08-28 12:31:24,953 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SelIntr/src/main/resources overlaps with sources folder /SelIntr/src
+2024-08-28 12:31:24,953 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /SelIntr/src/test/java because it overlaps with /SelIntr/src
+2024-08-28 12:31:24,954 [Worker-3: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /SelIntr/src/test/resources overlaps with sources folder /SelIntr/src
+2024-08-28 12:31:25,136 [Worker-3: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 2 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-08-28 12:31:25,305 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:25,306 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\main\resources
+2024-08-28 12:31:25,307 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:25,308 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\SelIntr\src\test\resources
+2024-08-28 12:31:25,348 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:25,348 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:31:25,349 [Worker-3: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:25,350 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:31:26,413 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:26,414 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:31:26,415 [Worker-45: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:31:26,416 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources
+2024-08-28 12:36:33,973 [Worker-39: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:36:33,974 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:36:33,975 [Worker-39: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:36:33,975 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:36:53,670 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@4387e01f{STOPPING}[12.0.9,sto=0]
+2024-08-28 12:36:53,674 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@16afaeb8{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-08-28 12:49:18,161 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-28 12:49:49,737 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:49:49,739 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\main\resources
+2024-08-28 12:49:49,744 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:49:49,745 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\SelIntro\src\test\resources
+2024-08-28 12:49:50,436 [Worker-30: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/SelIntro: SelIntro:SelIntro:0.0.1-SNAPSHOT with classifier  to /SelIntro/target/classes
+2024-08-28 12:49:50,445 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:49:50,446 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\main\resources
+2024-08-28 12:49:50,448 [Worker-30: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-08-28 12:49:50,450 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\pc\eclipse-workspace\Introduction\src\test\resources

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="products1"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="products1"/>
+			<item value="WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));"/>
+			<item value="webdriverwait"/>
+			<item value="wait"/>
+			<item value="Add "/>
+			<item value="Add to"/>
+			<item value="Integer"/>
+			<item value="arraylist"/>
+			<item value="testp"/>
+			<item value="POID"/>
+			<item value="*"/>
+			<item value="Thread.sleep("/>
+			<item value="Thread.sleep(2000);"/>
+			<item value="s2"/>
+			<item value="s1"/>
+		</list>
+		<list key="replacehistory">
+			<item value=" "/>
+			<item value="//Thread.sleep("/>
+			<item value="//Thread.sleep(2000);"/>
+			<item value="b"/>
+			<item value="a"/>
+			<item value="/"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1137"/>
+		<item key="DIALOG_Y_ORIGIN" value="492"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

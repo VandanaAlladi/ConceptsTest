@@ -1,0 +1,22 @@
+
+public class ConstructorUsage  {
+
+	 int i;
+
+	public ConstructorUsage(int i) {
+		this.i=i;
+	}
+	
+	
+	public int increment() {
+		
+		i+=1;
+		return i;
+	}
+	
+	public int decrement() {
+		i-=1;
+		return i;		
+	}
+
+}

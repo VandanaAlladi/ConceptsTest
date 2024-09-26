@@ -1,0 +1,30 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SelIntroduction {
+
+	public static void main(String[] args) {
+		
+		
+		
+		// TODO Auto-generated method stub
+		
+		
+		 ChromeOptions options = new ChromeOptions();
+		 options.addArguments("start-maximized");
+		 
+		 WebDriver driver = new ChromeDriver(options);
+		driver.get("https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&Channel=DSA&DSACode=XRKD&SMCode=H5399&LGCode=MMM2&LCCode=RKS001&LC2=RKS001#nbb");
+		driver.findElement(By.id("destination_publishing_iframe_hdfcbank_0"));
+		System.out.println(driver.getTitle());
+
+		System.out.println(driver.getCurrentUrl());
+		
+
+	}
+
+}

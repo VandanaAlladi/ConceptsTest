@@ -1,0 +1,47 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LoginPage {
+	WebDriver driver;
+	public LoginPage(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	
+	//driver.findElement(By.id("ap_email")).sendKeys("9492902280");
+	@FindBy(id="ap_email")
+	WebElement userEmail;
+	
+	
+	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	//WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='a-button-text']")));
+	//continueButton.click();
+	
+	//WebElement continueButton=	driver.findElement(By.xpath("//input[@id='continue']"));
+	
+	@FindBy(xpath="//input[@id='continue']")
+	WebElement continueButton;
+	
+	void loginUserName(String MobileNumber) {
+		userEmail.sendKeys(MobileNumber);
+		continueButton.click();
+	}
+	
+	//Actions actions = new Actions(driver);
+	//actions.moveToElement(continueButton).build().perform();
+	
+	
+	
+	
+}

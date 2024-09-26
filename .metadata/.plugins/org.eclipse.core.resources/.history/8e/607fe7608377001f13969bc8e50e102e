@@ -1,0 +1,14 @@
+
+public class MiddleCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String a="vandana";
+		
+		int middle=a.length()/2;
+		System.out.println(middle);
+
+	}
+
+}

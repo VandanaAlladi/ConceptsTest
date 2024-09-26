@@ -1,0 +1,42 @@
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class GoibiboWindowHandling {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver =new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.goibibo.com");
+		
+		
+		Set<String> windowIds=driver.getWindowHandles();
+		
+		for(String windowId: windowIds) {
+			System.out.println("in for loop");
+			driver.switchTo().window(windowId);
+			System.out.println("after switching window");
+			String msgOnWindow=driver.findElement(By.className("sc-jEACwC")).getText();
+			System.out.println(msgOnWindow);
+			//for child window
+			if(msgOnWindow.equals("Login/Signup")) {
+				System.out.println("inside if block");
+				driver.findElement(By.className("loginCont__input")).sendKeys("9492902280");
+				//driver.findElement(By.xpath("//*[text()='Continue']")).click();
+				Thread.sleep(2000);
+				driver.close();
+				
+			}
+		}
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

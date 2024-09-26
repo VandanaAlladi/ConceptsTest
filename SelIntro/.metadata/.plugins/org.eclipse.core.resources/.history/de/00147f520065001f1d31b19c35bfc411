@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module SelIntr {
+	requires org.seleniumhq.selenium.api;
+}

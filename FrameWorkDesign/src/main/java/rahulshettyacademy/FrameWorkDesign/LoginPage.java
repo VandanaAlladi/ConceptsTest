@@ -1,0 +1,63 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import rahulshettyacademy.utilities.AbstractComponents;
+
+public class LoginPage extends AbstractComponents {
+	WebDriver driver;
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	@FindBy(xpath="//span[text()='Account & Lists']")
+	WebElement accountsLists;
+	
+	//driver.findElement(By.id("ap_email")).sendKeys("9492902280");
+	@FindBy(id="ap_email")
+	WebElement userEmail;
+	
+	
+	//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	//WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='a-button-text']")));
+	//continueButton.click();
+	
+	//WebElement continueButton=	driver.findElement(By.xpath("//input[@id='continue']"));
+	
+	@FindBy(xpath="//input[@id='continue']")
+	WebElement continueButton;
+	
+	
+	public void goTo() {
+		driver.get("https://www.amazon.in/");
+		accountsLists.click();
+	
+	}
+	
+	
+	public PasswordPage loginUserName(String phoneNo) {
+		goTo();
+		userEmail.sendKeys(phoneNo);
+		continueButton.click();
+		PasswordPage passwordPage=new PasswordPage(driver);
+		return passwordPage;
+	}
+	
+	
+	//Actions actions = new Actions(driver);
+	//actions.moveToElement(continueButton).build().perform();
+	
+	
+	
+	
+}

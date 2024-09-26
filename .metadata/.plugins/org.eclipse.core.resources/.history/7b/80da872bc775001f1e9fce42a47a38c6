@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test name="CarLoan">
+
+		<parameter name="URL" value="rahulshettayacademy.com"/>
+		<parameter name="browser" value="Chrome" />
+		<parameter name="version" value="90.0" />
+		<packages>
+			<package name="test"></package>
+		</packages>
+	</test>
+</suite> 
+
+   

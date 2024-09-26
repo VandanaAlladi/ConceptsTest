@@ -1,0 +1,21 @@
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CalendarPracticeMMT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.makemytrip.com/");
+		//Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+		driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/child::span[1]")).click();
+		driver.findElement(By.xpath("//span[text()='Departure']")).click();
+		driver.findElement(By.xpath("//div[@aria-label='Tue Oct 01 2024']")).click();
+	}
+
+}

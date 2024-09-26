@@ -1,0 +1,23 @@
+
+public class ConstructorUsage  extends  SuperKeyWordUsage{
+
+	 int i;
+	 
+	 //parameterized constuctor
+	public ConstructorUsage(int a) {
+		this.i=a;
+	}
+	
+	
+	public int increment() {
+		
+		i+=1;
+		return i;
+	}
+	
+	public int decrement() {
+		i-=1;
+		return i;		
+	}
+
+}

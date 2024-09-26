@@ -1,0 +1,63 @@
+import java.sql.Driver;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import dev.failsafe.internal.util.Assert;
+
+public class MakeMyTrip {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.makemytrip.com/?srsltid=AfmBOoqGAebBYOg7lsqzqLK59oxkLaqK3JMsYPF79EkFRQXigG_E9kfT");
+		Thread.sleep(3000);
+		
+		System.out.println((driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/descendant::ul[1]/child::li[1]")).getText()));
+		
+		driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/child::span[1]")).click();
+		
+		
+		
+		
+		
+		
+		//driver.switchTo().frame(driver.findElement(By.id("gsi_642540_222941")));
+		
+		//driver.findElement(By.id("button-label")).click();
+		//https://www.makemytrip.com/?srsltid=AfmBOoqGAebBYOg7lsqzqLK59oxkLaqK3JMsYPF79EkFRQXigG_E9kfT
+		// TODO Auto-generated method stub
+		/*String parentWindowId=driver.getWindowHandle();
+		System.out.println(parentWindowId +" parent Window");*/
+		
+		//Set<String> handles=driver.getWindowHandles();//it has address
+		//
+		//System.out.println(handles.size());
+		
+		
+		//WebElement element=	driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/descendant::ul[1]/child::li[1]"));
+		
+				//	(element.getText(),"PERSONAL ACCOUNT");
+			
+		//String window1=it.next();
+		//System.out.println(window1);
+		//String window2=it.next();
+		//System.out.println(window2);*/
+		//WebElement elementToHover =driver.findElement(By.xpath("img[@alt='Make My Trip']"));
+		//Actions actions=new Actions(driver);
+		//actions.moveToElement(elementToHover).perform();
+		//elementToHover.click();
+				
+	}
+		
+	
+	
+		
+}
+

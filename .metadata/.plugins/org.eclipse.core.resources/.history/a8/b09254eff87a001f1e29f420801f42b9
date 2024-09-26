@@ -1,0 +1,26 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LoginPage {
+	driver.findElement(By.id("ap_email")).sendKeys("9492902280");
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+	//WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='a-button-text']")));
+	//continueButton.click();
+	
+	WebElement continueButton=	driver.findElement(By.xpath("//input[@id='continue']"));
+	
+	//Actions actions = new Actions(driver);
+	//actions.moveToElement(continueButton).build().perform();
+	
+	continueButton.click();
+
+	
+	driver.findElement(By.id("ap_password")).sendKeys("veda@555");
+	driver.findElement(By.id("auth-signin-button")).click();
+}

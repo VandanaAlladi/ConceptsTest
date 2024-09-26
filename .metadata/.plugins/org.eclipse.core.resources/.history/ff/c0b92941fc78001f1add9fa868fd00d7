@@ -1,0 +1,25 @@
+
+public class SuperKeyWordUsage {
+	
+	int a;
+	
+	public SuperKeyWordUsage(int i) {
+		
+		this.a=i;
+		// TODO Auto-generated constructor stub
+	}
+
+	public int multiplybyTwo() {
+		
+		a=i*2;
+		return a;
+	}
+	
+	public int multiplyByThree() {
+		
+		a=i*3;
+		return a;
+	}
+	
+
+}

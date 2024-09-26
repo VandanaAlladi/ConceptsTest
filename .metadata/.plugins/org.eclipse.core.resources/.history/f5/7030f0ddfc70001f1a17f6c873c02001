@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CovidCases {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("https://www.covid19india.org/");
+		
+		driver.findElements(By.xpath("(//table[@class='has-fixed-layout'])[2]/tbody/tr/td[1]"));
+		// TODO Auto-generated method stub
+
+	}
+
+}

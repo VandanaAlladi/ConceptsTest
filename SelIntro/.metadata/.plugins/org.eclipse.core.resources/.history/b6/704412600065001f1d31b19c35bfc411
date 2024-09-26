@@ -1,0 +1,10 @@
+package automation.practice;
+
+public class AutomationIntro {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class SuperKeyWordUsage {
+	
+	int a;
+	
+	public int multiplybyTwo() {
+		
+		a=a*2;
+		return a;
+	}
+	
+	public int multiplyByThree() {
+		
+		a=a*3;
+		return a;
+	}
+	
+
+}

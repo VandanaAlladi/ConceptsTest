@@ -1,0 +1,38 @@
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ChildWindowPractise {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+		
+		String parentWindow=driver.getWindowHandle();
+		System.out.println(parentWindow);
+		
+		driver.findElement(By.linkText("Free Access to InterviewQues/ResumeAssistance/Material")).click();
+		Set<String> windows=driver.getWindowHandles();
+		
+		System.out.println(windows.size());
+		
+		Iterator<String> it=windows.iterator();
+		String window1=it.next();
+		System.out.println(window1);//same as parent window
+		String childWindow=it.next();
+		System.out.println(childWindow);//child window
+		driver.switchTo().window(childWindow);
+		System.out.println(driver.findElement(By.linkText("mentor@rahulshettyacademy.com")).getText());
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package automation.practice.testing;
+
+public class GoogleTesting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

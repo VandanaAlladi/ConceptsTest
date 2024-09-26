@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="23" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-20T18:42:29 IST" name="Loan Department" finished-at="2024-09-20T18:42:29 IST" duration-ms="58">
+    <groups>
+      <group name="Web">
+        <method signature="HomeLoan2.MobileWebHomeLogin()[pri:0, instance:test.HomeLoan2@4afcd809]" name="MobileWebHomeLogin" class="test.HomeLoan2"/>
+        <method signature="PersonalLoan.WebLoginPL(java.lang.String)[pri:0, instance:test.PersonalLoan@175c2241]" name="WebLoginPL" class="test.PersonalLoan"/>
+        <method signature="CarLoan.WebLoginCL(java.lang.String)[pri:0, instance:test.CarLoan@36fc695d]" name="WebLoginCL" class="test.CarLoan"/>
+        <method signature="CarLoan2.MobileWebCarLogin()[pri:0, instance:test.CarLoan2@28701274]" name="MobileWebCarLogin" class="test.CarLoan2"/>
+        <method signature="HomeLoan.WebLoginHL()[pri:0, instance:test.HomeLoan@62379589]" name="WebLoginHL" class="test.HomeLoan"/>
+      </group> <!-- Web -->
+      <group name="API">
+        <method signature="HomeLoan.LoginAPIHL()[pri:0, instance:test.HomeLoan@62379589]" name="LoginAPIHL" class="test.HomeLoan"/>
+        <method signature="PersonalLoan.LoginAPIPL()[pri:0, instance:test.PersonalLoan@175c2241]" name="LoginAPIPL" class="test.PersonalLoan"/>
+        <method signature="CarLoan.LoginAPICL()[pri:0, instance:test.CarLoan@36fc695d]" name="LoginAPICL" class="test.CarLoan"/>
+      </group> <!-- API -->
+      <group name="Mobile">
+        <method signature="HomeLoan.MobileSigninHL()[pri:0, instance:test.HomeLoan@62379589]" name="MobileSigninHL" class="test.HomeLoan"/>
+        <method signature="HomeLoan.MobileLogOutHL()[pri:0, instance:test.HomeLoan@62379589]" name="MobileLogOutHL" class="test.HomeLoan"/>
+        <method signature="HomeLoan2.MobileWebHomeLogin()[pri:0, instance:test.HomeLoan2@4afcd809]" name="MobileWebHomeLogin" class="test.HomeLoan2"/>
+        <method signature="PersonalLoan.MobileLoginPL()[pri:0, instance:test.PersonalLoan@175c2241]" name="MobileLoginPL" class="test.PersonalLoan"/>
+        <method signature="CarLoan.MobileLogOutCL()[pri:0, instance:test.CarLoan@36fc695d]" name="MobileLogOutCL" class="test.CarLoan"/>
+        <method signature="CarLoan.MobileLoginCL()[pri:0, instance:test.CarLoan@36fc695d]" name="MobileLoginCL" class="test.CarLoan"/>
+        <method signature="CarLoan2.MobileWebCarLogin()[pri:0, instance:test.CarLoan2@28701274]" name="MobileWebCarLogin" class="test.CarLoan2"/>
+      </group> <!-- Mobile -->
+    </groups>
+    <test started-at="2024-09-20T18:42:29 IST" name="CarLoan" finished-at="2024-09-20T18:42:29 IST" duration-ms="58">
+      <class name="test.PersonalLoan">
+        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:test.PersonalLoan@175c2241]" started-at="2024-09-20T18:42:29 IST" name="BeforeTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method signature="LoginAPIPL()[pri:0, instance:test.PersonalLoan@175c2241]" started-at="2024-09-20T18:42:29 IST" name="LoginAPIPL" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIPL -->
+        <test-method signature="MobileLoginPL()[pri:0, instance:test.PersonalLoan@175c2241]" started-at="2024-09-20T18:42:29 IST" name="MobileLoginPL" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginPL -->
+        <test-method signature="WebLoginPL(java.lang.String)[pri:0, instance:test.PersonalLoan@175c2241]" started-at="2024-09-20T18:42:29 IST" name="WebLoginPL" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginPL -->
+      </class> <!-- test.PersonalLoan -->
+      <class name="test.HomeLoan2">
+        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:test.HomeLoan2@4afcd809]" started-at="2024-09-20T18:42:29 IST" name="BeforeTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method signature="MobileWebHomeLogin()[pri:0, instance:test.HomeLoan2@4afcd809]" started-at="2024-09-20T18:42:29 IST" name="MobileWebHomeLogin" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileWebHomeLogin -->
+        <test-method signature="SecondHome(java.lang.String)[pri:0, instance:test.HomeLoan2@4afcd809]" started-at="2024-09-20T18:42:29 IST" name="SecondHome" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondHome -->
+      </class> <!-- test.HomeLoan2 -->
+      <class name="test.CarLoan2">
+        <test-method signature="MobileWebCarLogin()[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="MobileWebCarLogin" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileWebCarLogin -->
+        <test-method signature="SecondCar(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="SecondCar" data-provider="getData" finished-at="2024-09-20T18:42:29 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondCar -->
+        <test-method signature="SecondCar(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="SecondCar" data-provider="getData" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondCar -->
+        <test-method signature="SecondCar(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="SecondCar" data-provider="getData" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdUsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondCar -->
+        <test-method signature="UsernameCar(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="UsernameCar" data-provider="getUserData" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vandana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Alladi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsernameCar -->
+        <test-method signature="UsernameCar(java.lang.String,java.lang.String)[pri:0, instance:test.CarLoan2@28701274]" started-at="2024-09-20T18:42:29 IST" name="UsernameCar" data-provider="getUserData" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chandana]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[madastu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsernameCar -->
+      </class> <!-- test.CarLoan2 -->
+      <class name="test.Before">
+        <test-method is-config="true" signature="BeforeSuit()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="BeforeSuit" finished-at="2024-09-20T18:42:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuit -->
+        <test-method is-config="true" signature="BeforeTest()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="BeforeTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="BeforeClass" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="BeforeMethod" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="FirstTest()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="FirstTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstTest -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="AfterMethod" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method signature="SecondTest()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="SecondTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondTest -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="BeforeMethod" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method is-config="true" signature="AfterMethod()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="AfterMethod" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method is-config="true" signature="AfterClass()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="AfterClass" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="AfterTest" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method is-config="true" signature="AfterSuit()[pri:0, instance:test.Before@765d7657]" started-at="2024-09-20T18:42:29 IST" name="AfterSuit" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuit -->
+      </class> <!-- test.Before -->
+      <class name="test.PersonalLoan2">
+        <test-method signature="SecondPersonal()[pri:0, instance:test.PersonalLoan2@5bf0d49]" started-at="2024-09-20T18:42:29 IST" name="SecondPersonal" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondPersonal -->
+      </class> <!-- test.PersonalLoan2 -->
+      <class name="test.CarLoan">
+        <test-method signature="LoginAPICL()[pri:0, instance:test.CarLoan@36fc695d]" started-at="2024-09-20T18:42:29 IST" name="LoginAPICL" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICL -->
+        <test-method signature="MobileLogOutCL()[pri:0, instance:test.CarLoan@36fc695d]" started-at="2024-09-20T18:42:29 IST" name="MobileLogOutCL" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogOutCL -->
+        <test-method signature="MobileLoginCL()[pri:0, instance:test.CarLoan@36fc695d]" started-at="2024-09-20T18:42:29 IST" name="MobileLoginCL" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCL -->
+        <test-method signature="WebLoginCL(java.lang.String)[pri:0, instance:test.CarLoan@36fc695d]" started-at="2024-09-20T18:42:29 IST" name="WebLoginCL" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCL -->
+      </class> <!-- test.CarLoan -->
+      <class name="test.HomeLoan">
+        <test-method signature="MobileSigninHL()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="MobileSigninHL" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileSigninHL -->
+        <test-method signature="WebLoginHL()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="WebLoginHL" finished-at="2024-09-20T18:42:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHL -->
+        <test-method signature="LoginAPIHL()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="LoginAPIHL" finished-at="2024-09-20T18:42:29 IST" depends-on-methods="test.HomeLoan.MobileSigninHL" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPIHL -->
+        <test-method signature="MobileLogOutHL()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="MobileLogOutHL" finished-at="2024-09-20T18:42:29 IST" depends-on-methods="test.HomeLoan.MobileSigninHL" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogOutHL -->
+        <test-method is-config="true" signature="AfterClassTwo()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="AfterClassTwo" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClassTwo -->
+        <test-method is-config="true" signature="AfterClassOne()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="AfterClassOne" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClassOne -->
+        <test-method is-config="true" signature="AfterTestHomeLoan()[pri:0, instance:test.HomeLoan@62379589]" started-at="2024-09-20T18:42:29 IST" name="AfterTestHomeLoan" finished-at="2024-09-20T18:42:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestHomeLoan -->
+      </class> <!-- test.HomeLoan -->
+    </test> <!-- CarLoan -->
+  </suite> <!-- Loan Department -->
+</testng-results>

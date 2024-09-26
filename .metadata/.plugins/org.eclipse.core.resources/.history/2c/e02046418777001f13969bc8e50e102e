@@ -1,0 +1,23 @@
+
+public class StringSpecialCharacters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String a= "krb274@#&";
+		String b ;
+		
+		for(char c:a.toCharArray()) {
+			
+			if(Character.isAlphabetic(c)) {
+				
+				b=b+c;
+			}
+		}
+		System.out.println(b);
+		
+		
+	}
+
+}

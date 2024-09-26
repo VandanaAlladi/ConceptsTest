@@ -1,0 +1,40 @@
+import java.sql.Driver;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MakeMyTrip {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.makemytrip.com/?srsltid=AfmBOoqGAebBYOg7lsqzqLK59oxkLaqK3JMsYPF79EkFRQXigG_E9kfT");
+		
+		//https://www.makemytrip.com/?srsltid=AfmBOoqGAebBYOg7lsqzqLK59oxkLaqK3JMsYPF79EkFRQXigG_E9kfT
+		// TODO Auto-generated method stub
+		/*String parentWindowId=driver.getWindowHandle();
+		System.out.println(parentWindowId +" parent Window");
+		
+		Set<String> handles=driver.getWindowHandles();//it has address
+		
+		System.out.println(handles.size());
+		
+			
+			
+		//String window1=it.next();
+		//System.out.println(window1);
+		//String window2=it.next();
+		//System.out.println(window2);*/
+		
+		driver.findElement(By.cssSelector("input[class='font14 fullWidth']")).sendKeys("9492902280");
+	}
+		
+	
+	
+		
+}
+

@@ -1,0 +1,83 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import rahulshettyacademy.utilities.AbstractComponents;
+
+public class RemoveElementsFromCart extends AbstractComponents {
+	WebDriver driver;
+
+	public RemoveElementsFromCart(WebDriver driver) {
+		
+		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+		// TODO Auto-generated constructor stub
+	}
+	
+	//String cartValue= driver.findElement(By.xpath("//span[@id='nav-cart-count']")).getText();
+	@FindBy(xpath="//span[@id='nav-cart-count']")
+	WebElement cartValue;
+	
+	@FindBy(xpath="(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])")
+	List<WebElement> productsInTheCart;
+	
+	
+	By firstDelete=By.xpath("//input[@value='Delete']");
+
+	By firstElementIntheCart=By.xpath("(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])[1]");
+	
+	By productsBy=By.xpath("(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])");
+	
+	//System.out.println("cartValue: "+cartValue);
+	public void cartCount() {
+		
+		
+		int cartInteger=Integer.parseInt(cartValue.getText());
+		
+		if(cartInteger>0) {
+			System.out.println("in if block");
+		driver.findElement(By.id("nav-cart-count")).click();
+	
+		
+		}else {
+			System.out.println("in else block");
+			System.out.println("Cart value is 0");
+		}
+	}
+		public List<WebElement> getProductsList() {
+			
+			return productsInTheCart;
+			
+		}
+		
+		public void deleteCart() throws InterruptedException {
+			WebElement first=driver.findElement(firstElementIntheCart);
+			WebElement deleteFirstButton=first.findElement(firstDelete);
+			deleteFirstButton.click();
+			List<WebElement> products1=driver.findElements(By.xpath("(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])"));
+			System.out.println("products1 size:"+products1.size());
+		
+			
+			for(int i=2;i<=products1.size();i++) {
+				System.out.println("i: "+i);
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])[2]/descendant::input[@value='Delete']")).click();
+				
+				/*WebElement product=driver.findElement(By.xpath("(//form[@id='activeCartViewForm']/descendant::div[@data-bundleitem='absent'])[2]"));
+				WebElement button=wait.until(ExpectedConditions.elementToBeClickable(product.findElement(By.xpath("//input[@value='Delete']"))));
+				Thread.sleep(1000);
+				button.click(); */
+			
+			}
+		}
+		
+
+		
+}

@@ -1,0 +1,15 @@
+public class Palindrome1 {
+
+	public static void main(String[] args) {
+		
+		
+		String original="Malayalam";
+		String reverse="";
+		
+		for(int i=original.length();i>=0;i--) {
+			
+			reverse=reverse+original.charAt(i);
+		}
+		
+	}
+	}

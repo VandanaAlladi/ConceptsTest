@@ -1,0 +1,29 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AmericanExpressAllTabs {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.americanexpress.com/us/credit-cards/");
+		Thread.sleep(2000);
+		
+		WebElement footerdriver=driver.findElement(By.xpath("//div[@class='axp-footer__dls-module__pad3B___1J3uF axp-footer__dls-module__row___3H3xq']"));
+		int allLinks=footerdriver.findElements(By.tagName("a")).size();
+		
+		for(WebElement link:allLinks) {
+			
+			String url=link.getAttribute("href");
+			System.out.println(url);
+			
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}

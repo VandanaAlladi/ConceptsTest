@@ -1,0 +1,15 @@
+
+public class ChildClass extends ParentClass{
+	
+	public void getParentClassMethod() {
+		
+		
+		ConstructorUsage cu=new ConstructorUsage(3);
+		getParentClassMethod();
+		
+		System.out.println(cu.increment());
+		System.out.println(cu.decrement());
+		
+	}
+
+}

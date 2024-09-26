@@ -1,0 +1,103 @@
+package demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreamExample {
+
+	public static void main(String[] args) {
+		
+		
+		//creating stream of a list
+		
+		List<Integer> salary=Arrays.asList(2000,200000,3000,40000,5000);
+		Stream<Integer> streamSalary=salary.stream();
+		
+		//creating stream from an array
+		String[] names6= {"kal", "Chan","van","bro","Hari"};
+		Stream<String> streamOFArray=Arrays.stream(names6);
+		
+		List<String> namesList=streamOFArray.filter((String name)->name.length()>4).collect(Collectors.toList());
+		
+		
+		System.out.println(namesList.get(0));
+		
+		System.out.println("******************************************************");
+		
+		//creating stream in a static method
+		
+		Stream<String> streamFromStaticMethod=Stream.of("cat","dog","Animals");
+		
+		
+		//stream from Iterate
+		Stream<Integer> streamFromIterate=Stream.iterate(1000, (Integer n)->n+5000).limit(5);
+		
+		streamFromIterate.distinct().forEach(n->System.out.println(n));
+		
+		
+		System.out.println("******************************************************");
+		
+		//stream from stream builder
+		Stream.Builder<Integer> streamBuilder=Stream.builder();
+		streamBuilder.add(1000).add(9000).add(5000);
+		
+		Stream<Integer> streamFromStreamBuilder=streamBuilder.build();
+		
+		
+		
+		
+		
+	List<String> names=Arrays.asList("Vandana", "Chandana", "Kalyani", "Sai krupa", "Mokshaa", "Veda","Hari");
+	Long c=names.stream().filter(s->s.startsWith("V")).count();
+	System.out.println(c);
+
+	System.out.println("******************************************************");
+		names.stream().filter(s->s.length()>5).forEach(s->System.out.println(s));
+		System.out.println("******************************************************");
+		names.stream().filter(s->s.endsWith("i")).map(s->s.toUpperCase()).forEach(s->System.out.println(s));
+		
+		
+		System.out.println("******************************************************");
+		
+		//names.stream().filter(s->s.startsWith("V")).limit(0);
+		//System.out.println(names.stream());
+		
+		
+	List<String> name2=Arrays.asList("Radha", "Vijaya", "Shantha","Suguna");
+			
+			//.filter(s->s.startsWith("S")).limit(1).forEach(s->System.out.println(s));
+	
+	
+	System.out.println("******************************************************");	
+			
+		Stream<String> names3=Stream.concat(names.stream(), name2.stream());
+		boolean name5=names3.anyMatch(s->s.equalsIgnoreCase("Veda"));
+		System.out.println("******************************************************");
+		System.out.println(name5);
+		
+		//names3.filter(s->s.endsWith("a")).map(s->s.toLowerCase()).forEach(s->System.out.println(s));
+		
+		System.out.println("******************************************************");	
+	List<Integer> values=Arrays.asList(1, 2, 2,9,9,6, 3, 3, 5,4, 7,8,8);
+		values.stream().distinct().forEach(s->System.out.println(s));
+		
+		System.out.println("******************************************************");	
+		values.stream().filter((Integer num)->num>3).distinct().sorted().forEach(num->System.out.println(num));
+		
+		System.out.println("******************************************************");	
+		
+		List<Integer> values2=values.stream().distinct().sorted().collect(Collectors.toList());
+		System.out.println(values2.get(5));
+		//names.stream().filter(s->s.contains("dana")).collect(collections.list))
+		
+		
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,88 @@
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class CalendarHandlingGoibibo {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.get("https://www.goibibo.com");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5000));
+		WebElement smallWindowPhoneNumber = wait
+				.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector(".loginCont__input"))));
+		driver.findElement(By.cssSelector("span[class='logSprite icClose']")).click();
+
+		WebElement fromCity = wait.until(ExpectedConditions
+				.visibilityOf(driver.findElement(By.xpath("//span[text()='From']/following-sibling::p"))));
+		fromCity.click();
+		driver.findElement(By.xpath("//span[text()='From']/following-sibling::input")).sendKeys("HYD");
+		// Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='sc-12foipm-24 bDSkOK']/ul[@id='autoSuggest-list']/li[1]")).click();
+		// Thread.sleep(5000);
+		// driver.findElement(By.xpath("//span[text()='To']/following-sibling::p")).click();
+		// Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='To']/following-sibling::input")).sendKeys("DPS");
+		// Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='sc-12foipm-24 bDSkOK']/ul[@id='autoSuggest-list']/li[1]")).click();
+		driver.findElement(By.xpath("(//span[@class='sc-12foipm-8 eXKWBG fswDownArrow'])[1]")).click();
+
+		//WebElement departureCalendar=driver.findElement(By.xpath("(//div[@class='DayPicker-Caption'])[1]/div"));
+		//String departure=departureCalendar.getText();
+		//System.out.println("departure="+departure);
+		//String[] departureYearArray=departure.split(" ");
+		//String departureYear=departureYearArray[1];
+		//int departureYear1=Integer.parseInt(departureYear);
+		//System.out.println("departureYear1="+departureYear1);
+		//WebElement nextButton=driver.findElement(By.xpath("//span[@aria-label='Next Month']"));
+		//nextButton.click();
+		//System.out.println(departure);
+		
+		/*while(departureYear1<=2024) {
+			System.out.println("in while loop");
+			nextButton.click();
+			System.out.println("departure="+departure);
+			
+			WebElement departureCalendar2=driver.findElement(By.xpath("(//div[@class='DayPicker-Caption'])[1]/div"));
+			String departure2=departureCalendar.getText();
+			System.out.println("departure="+departure);
+			String[] departureYearArray2=departure.split(" ");
+			String departureYear2=departureYearArray[1];
+			int departureYear2=Integer.parseInt(departureYear2);
+			if(departure.equals("December 2024")) {
+				System.out.println("in if block");
+				driver.findElement(By.xpath("div[aria-label='Wed Dec 25 2024']")).click();
+				break;
+			}*/
+		
+		while(!(driver.findElement(By.xpath("(//div[@class='DayPicker-Caption'])[1]/div")).getText()).equals("December 2024")){
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
+			Thread.sleep(1000);
+			
+			System.out.println(driver.findElement(By.xpath("(//div[@class='DayPicker-Caption'])[1]/div")).getText());
+		}
+		
+		
+		/*while(!((returnMonth.getText()).equals("July2025"))) {
+			nextButton.click();
+			
+		}
+		
+		WebElement returnDateSelected=driver.findElement(By.xpath("//div[@aria-label='Thu Jul 24 2025']"));
+		returnDateSelected.click();
+		
+		
+		}*/
+	}
+
+}

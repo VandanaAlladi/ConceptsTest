@@ -1,0 +1,163 @@
+import java.sql.Driver;
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import dev.failsafe.internal.util.Assert;
+
+public class MakeMyTrip {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.makemytrip.com/");
+		Thread.sleep(3000);
+		
+		System.out.println((driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/descendant::ul[1]/child::li[1]")).getText()));
+		
+		driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/child::span[1]")).click();
+		
+		Thread.sleep(5000);
+		
+		WebElement tripType=driver.findElement(By.xpath("//li[text()='Round Trip']"));
+		if(!tripType.isSelected()) {
+			tripType.click();
+		}
+		driver.findElement(By.id("fromCity")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//input[@placeholder='From'])[1]")).sendKeys("HYD");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Hyderabad']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("toCity")).click();
+		driver.findElement(By.xpath("(//input[@placeholder='To'])[1]")).sendKeys("BKK");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//span[text()='Bangkok']")).click();
+		//driver.findElement(By.className("DayPicker-NavButton--prev")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@aria-label='Thu Sep 26 2024']")).click();
+		driver.findElement(By.className("DayPicker-NavButton--next")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@aria-label='Sat Nov 23 2024']")).click();
+		driver.findElement(By.xpath("//span[@class='lbl_input appendBottom5']")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//li[@data-cy='adults-10']")).click();
+		driver.findElement(By.xpath("//li[@data-cy='children-6']")).click();
+		driver.findElement(By.xpath("//li[@data-cy='infants-6']")).click();
+		driver.findElement(By.xpath("//li[@data-cy='travelClass-2']")).click();
+		driver.findElement(By.xpath("//button[text()='APPLY']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()='Search']")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//div[@class='checkboxContent']/child::p[contains(.,'Air India')]")).click();
+		driver.findElement(By.xpath("//div[@class='checkboxContent']/child::p[contains(.,'1-Stop')]")).click();
+		driver.findElement(By.xpath("//span[text()='Show more filters ']")).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//p[contains(.,'Departure From Hyderabad')]/parent::div[1]/descendant::p[contains(.,'6 AM - 12 PM')]")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("(//span[text()='Select flight'])[2]")).click();
+		Thread.sleep(5000);
+		//driver.findElement(By.xpath("(//button[text()='LOCK PRICE'])[2]")).click();
+		driver.findElement(By.xpath("(//button[text()='BOOK NOW'])[2]")).click();
+		
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebElement experienceLink=wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className("icon16"))));
+		//System.out.println(driver.findElement(By.xpath("//li[contains(.,'Add-ons')]")).getText());
+		//driver.findElement(By.xpath("//div[@class='pageLeftConainer']/child::form[1]/descendant::span[text()='See complete flight experience']")).click();
+		
+		//System.out.println(driver.findElement(By.xpath("//label[text()='Mobile No']")).getText());
+		//driver.findElement(By.xpath("//div[@class='bookingDetailsForm']/descendant::input[@placeholder='Mobile No']")).sendKeys("9492902280");
+		//driver.findElement(By.xpath("//div[@class='pageRightContainer ']/descendant::div[@class='flexOne'][2]")).click();
+		
+		
+		//System.out.println(driver.findElement(By.xpath("//form[@id='mainSection_0']/descendant::div[@class='makeFlex hrtlCenter spaceBetween boldFont appendBottom15']/child::span[@class='fontSize20 bizClsBlueBlack']/child::font[text()='Review your journey']")).getText());
+		
+		//JavascriptExecutor jse=(JavascriptExecutor) driver;
+		//jse.executeScript(0, 600);
+		/*driver.findElement(By.xpath("//form[@id='mainSection_0']/descendant::input[@placeholder='Mobile No']")).sendKeys("9492902280");
+		driver.findElement(By.xpath("//form[@id='mainSection_0']/descendant::input[@placeholder='Email']")).sendKeys("alladi.vandana92@gmail.com");
+		WebElement dropdown=driver.findElement(By.id("dt_state_gst_info"));
+		Select dropdownTG=new Select(dropdown);
+		dropdownTG.selectByVisibleText("Telangana");
+		
+		
+		/*driver.findElement(By.xpath("//ul[@class='makeFlex font12 headerIconsGap']/li[2]")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//ul[@class='makeFlex font12 headerIconsGap']/li[3]")).click();
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//ul[@class='makeFlex font12 headerIconsGap']/li[4]")).click();
+		Thread.sleep(1000);
+		System.out.println(driver.findElement(By.xpath("//label[@for='fromCity']/span[1]")).getText());
+		Actions actions=new Actions(driver);
+		driver.findElement(By.xpath("//ul[@class='makeFlex font12 headerIconsGap']/li[1]")).click();
+		Thread.sleep(1000);*/
+		
+		/*WebElement element=driver.findElement(By.xpath("//label[@for='fromCity']/input[@id='fromCity']"));
+		actions.moveToElement(element).perform();
+		actions.scrollToElement(element);
+		actions.click(element);
+		driver.findElement(By.cssSelector("span[class='flightsSprite fltSwipIcon']")).click();
+		driver.findElement(By.className("widgetSearchBtn")).click();
+		//System.out.println(driver.findElement(By.xpath("//font[text()='Offers']")).getText());
+		//driver.findElement(By.xpath("//a[@id='superOffersTab_HOTELS']")).click();
+		//WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5000));
+		//Thread.sleep(5000);
+		//click on viewDetails link in Hotels tab in offers page
+		//driver.findElement(By.xpath	("//div[@data-cy='suUrl-0']/descendant::div[8]/child::a[@data-cy='superOfferCtaText0']")).click();
+		
+		//driver.findElement(By.xpath
+		//("//div[@class='tpDest appendBottom20']/descendant::div[@class='tpDest__slider--itemDesc']/child::p[contains(.,'Picturesque Gateway to Himalayas')")).click();
+		//viewDetails.click();
+		//driver.findElement(By.xpath("//a[@data-cy='superOfferCtaText0']")).click();
+		
+		
+		//driver.findElement(By.xpath("//div[@role='combobox']/child::input[1]")).sendKeys("HYD");
+		
+		
+		
+		//driver.switchTo().frame(driver.findElement(By.id("gsi_642540_222941")));
+		
+		//driver.findElement(By.id("button-label")).click();
+		//https://www.makemytrip.com/?srsltid=AfmBOoqGAebBYOg7lsqzqLK59oxkLaqK3JMsYPF79EkFRQXigG_E9kfT
+		// TODO Auto-generated method stub
+		/*String parentWindowId=driver.getWindowHandle();
+		System.out.println(parentWindowId +" parent Window");*/
+		
+		//Set<String> handles=driver.getWindowHandles();//it has address
+		//
+		//System.out.println(handles.size());
+		
+		
+		//WebElement element=	driver.findElement(By.xpath("//section[@data-cy='CommonModal_2']/descendant::ul[1]/child::li[1]"));
+		
+				//	(element.getText(),"PERSONAL ACCOUNT");
+			
+		//String window1=it.next();
+		//System.out.println(window1);
+		//String window2=it.next();
+		//System.out.println(window2);*/
+		//WebElement elementToHover =driver.findElement(By.xpath("img[@alt='Make My Trip']"));
+		//Actions actions=new Actions(driver);
+		//actions.moveToElement(elementToHover).perform();
+		//elementToHover.click();
+				
+	}
+		
+	
+	
+		
+}
+

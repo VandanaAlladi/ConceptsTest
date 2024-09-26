@@ -1,0 +1,31 @@
+import org.testng.annotations.Test;
+
+public class ChildClass extends ParentClass{
+	
+	
+	@Test
+	public void getConstuctorClass() {
+		
+	//we are sending parameters at the time of object creation itself, instead of sending parameters to each and
+		//every method present in this class, then we need constructor, this key word is used to mention class level variable
+	ConstructorUsage cu=new ConstructorUsage(3);
+
+	
+	System.out.println(cu.increment());
+	System.out.println(cu.decrement());
+	
+	SuperKeyWordUsage sk=new SuperKeyWordUsage(2,3);
+	System.out.println(sk.multiplybyTwo());
+	System.out.println(sk.multiplyByThree());
+	
+	
+	}
+	@Test
+	public void getParentClassMethod() {
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
+public class GoibiboWindowHandling {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver =new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.goibibo.com");
+		
+		
+		Set<String> windowIds=driver.getWindowHandles();
+		
+		for(String windowId: windowIds) {
+			System.out.println("in for loop");
+			System.out.println(windowId+" before switching");
+			driver.switchTo().window(windowId);
+			System.out.println(windowId+" after switching");
+			System.out.println("after switching window");
+			String msgOnWindow=driver.findElement(By.cssSelector("h3[class='sc-jEACwC jHNsDt']")).getText();
+			System.out.println(msgOnWindow);
+			//for child window
+			if(msgOnWindow.equals("Login/Signup")) {
+				System.out.println("inside if block");
+				driver.findElement(By.className("loginCont__input")).sendKeys("9492902280");
+				//driver.findElement(By.xpath("//*[text()='Continue']")).click();
+				Thread.sleep(2000);
+			
+				System.out.println(driver.findElement(By.xpath("//p[@ data-id='terms-condition']")).getText());
+				System.out.println(windowId+(" before closing"));
+				driver.switchTo().window(windowId);
+				driver.findElement(By.cssSelector("span[class='logSprite icClose']")).click();
+				break;
+				
+			}
+			
+			System.out.println("after if condition "+windowId);
+			driver.switchTo().window(windowId);
+		}
+		
+		//driver.findElement(By.cssSelector("p[class='sc-gEvEer gpfTmR']")).click();
+		driver.findElement(By.cssSelector("span[class='sc-12foipm-26 bIIzJX']")).sendKeys("HYD");
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

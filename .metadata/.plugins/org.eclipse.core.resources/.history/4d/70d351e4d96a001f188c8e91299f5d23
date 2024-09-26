@@ -1,0 +1,24 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class VegetableShopping {
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		driver.findElement(By.xpath("//h4[text()='Tomato - 1 Kg']/parent::div/descendant::button[text()='ADD TO CART']")).click();
+		driver.findElement(By.xpath("//h4[text()='Potato - 1 Kg']/parent::div/descendant::button[text()='ADD TO CART']")).click();
+		
+		for(int i=0;i<5;i++) {
+		driver.findElement(By.xpath("//h4[text()='Potato - 1 Kg']/parent::div/descendant::a[2]")).click();
+		}
+		// TODO Auto-generated method stub
+
+	}
+
+}

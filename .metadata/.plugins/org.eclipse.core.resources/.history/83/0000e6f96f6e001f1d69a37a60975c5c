@@ -1,0 +1,26 @@
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class AnchorTag {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.India_dev.&campaigntype=Search&portfolio=BrandDirect&language=EN&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_133043842301_._ad_595460368494_._kw_udemy_._de_c_._dm__._pl__._ti_kwd-296956216253_._li_9062143_._pd__._&matchtype=b&gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-JyPqd14xwHXVrmFRbIq0hGe4JZKtikbRWu_UiN8gctk8dv5redeOQaAnp6EALw_wcB");
+		
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(25));
+		List<WebElement> allLinks=wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(By.tagName("a"))));
+
+	}
+
+}

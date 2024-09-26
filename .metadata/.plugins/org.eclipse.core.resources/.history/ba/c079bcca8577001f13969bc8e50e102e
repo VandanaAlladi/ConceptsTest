@@ -1,0 +1,30 @@
+
+public class Palindrome1 {
+
+	public static  void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String a="masam";
+		
+		int left=0;
+		int right=a.length()-1;
+		
+		
+		
+		public static boolean isPalindrome(String a) {
+		
+		while(left<right) {
+		if(a.charAt(left) != a.charAt(right)) {
+			return false;
+			
+		}
+		left++;
+		right--;
+		
+		
+	}
+		return true;
+		}
+}
+}

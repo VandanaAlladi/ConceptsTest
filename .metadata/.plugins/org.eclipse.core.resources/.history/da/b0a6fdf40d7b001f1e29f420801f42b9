@@ -1,0 +1,17 @@
+package rahulshettyacademy.FrameWorkDesign;
+
+import org.openqa.selenium.WebDriver;
+
+import rahulshettyacademy.utilities.AbstractComponents;
+
+public class RemoveElementsFromCart extends AbstractComponents {
+	WebDriver driver;
+
+	public RemoveElementsFromCart(WebDriver driver) {
+		
+		super(driver);
+		this.driver=driver;
+		// TODO Auto-generated constructor stub
+	}
+
+}

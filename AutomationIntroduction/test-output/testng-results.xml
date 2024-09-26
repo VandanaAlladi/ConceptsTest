@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T09:35:36 IST" name="Default suite" finished-at="2024-09-23T09:35:36 IST" duration-ms="37">
+    <groups>
+    </groups>
+    <test started-at="2024-09-23T09:35:36 IST" name="Default test" finished-at="2024-09-23T09:35:36 IST" duration-ms="37">
+      <class name="ChildClass">
+        <test-method is-config="true" signature="beforeTestMethodInParentClass()[pri:0, instance:ChildClass@506ae4d4]" started-at="2024-09-23T09:35:36 IST" name="beforeTestMethodInParentClass" finished-at="2024-09-23T09:35:36 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethodInParentClass -->
+        <test-method signature="getConstuctorClass()[pri:0, instance:ChildClass@506ae4d4]" started-at="2024-09-23T09:35:36 IST" name="getConstuctorClass" finished-at="2024-09-23T09:35:36 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConstuctorClass -->
+        <test-method signature="getParentClassMethod()[pri:0, instance:ChildClass@506ae4d4]" started-at="2024-09-23T09:35:36 IST" name="getParentClassMethod" finished-at="2024-09-23T09:35:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParentClassMethod -->
+        <test-method signature="parentMethod()[pri:0, instance:ChildClass@506ae4d4]" started-at="2024-09-23T09:35:36 IST" name="parentMethod" finished-at="2024-09-23T09:35:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parentMethod -->
+        <test-method is-config="true" signature="AfterTestMethod()[pri:0, instance:ChildClass@506ae4d4]" started-at="2024-09-23T09:35:36 IST" name="AfterTestMethod" finished-at="2024-09-23T09:35:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestMethod -->
+      </class> <!-- ChildClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
